@@ -1,0 +1,95 @@
+:root {
+    /*Primary*/
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+
+    /*Neutral*/
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+    /*Gradients*/
+    --First-Gradient: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+    --Second-Gradient: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans";
+}
+
+body {
+    min-height: 100vh;
+    font-size: 16px;
+}
+
+main {
+    display: grid; 
+    min-height: 100vh;
+    grid-template-areas: 
+        "logo"
+        "hero"
+        "description"
+        "footer";
+    grid-template-rows: .75fr 2fr 3fr .1fr;
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.hero__img {
+    grid-area: hero;
+    background-image: url(./images/hero-mobile.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: none;
+}
+
+.content {
+    grid-area: description;
+    display: grid;
+    grid-template-rows: 2fr 1.5fr 1fr;
+    padding: 2em 1em .5em 1em;
+}
+
+.content h1 {
+    text-align: center;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    font-weight: 600;
+}
+
+h1 span {
+    color: var(--Desaturated-Red);
+    font-weight: 300;
+}
+
+.content p {
+    color: var(--Desaturated-Red);
+    text-align: center;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+}
+
+
+footer {
+    grid-area: footer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
