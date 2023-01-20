@@ -13,29 +13,35 @@
 </head>
 <body>
   <main>
-    <header class="logo">
+    <picture class="brand">
       <img src="./images/logo.svg">
-    </header>
+    </picture>
 
-    <picture class="hero__img"></picture>
+    <picture class="picture">
+      <img src="./images/hero-mobile.jpg">
+    </picture>
 
-    <div class="content">
+    <div class="description">
       <h1><span>We're</span><br>coming<br>soon</h1>
 
       <p>Hello fellow shoppers! We're currently building our new fashion store. 
       Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
-      <div class="email">
-        <input type="email" placeholder="Email Address">
-        <button tpye="button"><img src="./images/icon-arrow.svg"></button>
-      </div>
+      <form class="email">
+        <input type="email" placeholder="Email Address" id="email">
+        <button type="button" id="button"><img src="./images/icon-arrow.svg"></button>
+        <p id="error"></p>
+      </form>
     </div>
-    <footer>
+
+    <footer class="footer"> 
       <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://www.frontendmentor.io/profile/dangero1990" target="_blank">Andrew Eubanks</a>.
-      </p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/dangero1990" target="_blank">Andrew Eubanks</a>.</p>
     </footer>
+
   </main>
+
+  <script src="./script.js"></script>
 </body>
 </html>
