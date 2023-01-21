@@ -12,36 +12,34 @@
 
 </head>
 <body>
-  <main>
-    <picture class="brand">
-      <img src="./images/logo.svg">
-    </picture>
+  <picture class="brand">
+    <img src="./images/logo.svg">
+  </picture>
 
-    <picture class="picture">
-      <img src="./images/hero-mobile.jpg">
-    </picture>
+  <div class="description">
+    <h1><span>We're</span><br>coming<br>soon</h1>
 
-    <div class="description">
-      <h1><span>We're</span><br>coming<br>soon</h1>
+    <p>Hello fellow shoppers! We're currently building our new fashion store. 
+    Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
-      <p>Hello fellow shoppers! We're currently building our new fashion store. 
-      Add your email below to stay up-to-date with announcements and our launch deals.</p>
+    <form class="email">
+      <i id="error__icon"><img src="./images/icon-error.svg" alt=""></i>
+      <input type="email" placeholder="Email Address" id="email">
+      <button type="button" id="button"><img src="./images/icon-arrow.svg"></button>
+      <p id="error__msg"></p>
+    </form>
+  </div>
 
-      <form class="email">
-        <i id="error__icon"><img src="./images/icon-error.svg" alt=""></i>
-        <input type="email" placeholder="Email Address" id="email">
-        <button type="button" id="button"><img src="./images/icon-arrow.svg"></button>
-        <p id="error__msg"></p>
-      </form>
-    </div>
+  <picture class="picture">
+    <source srcset="./images/hero-desktop.jpg" media="(min-width: 400px)">
+    <img src="./images/hero-mobile.jpg">
+  </picture>
 
-    <footer class="footer"> 
-      <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://www.frontendmentor.io/profile/dangero1990" target="_blank">Andrew Eubanks</a>.</p>
-    </footer>
-
-  </main>
+  <footer class="footer"> 
+    <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/dangero1990" target="_blank">Andrew Eubanks</a>.</p>
+  </footer>
 
   <script type="text/javascript" src="./script.js"></script>
 </body>
