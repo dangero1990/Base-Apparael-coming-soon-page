@@ -48,7 +48,6 @@ body {
 
 .picture img {
     display: block;
-    width: 100%;
 }
 
 .description {
@@ -145,10 +144,10 @@ input::placeholder {
             "brand picture"
             "description picture"
             "footer picture";
-        grid-template-columns: 1fr .8fr;
         background-image: url(./images/bg-pattern-desktop.svg);
-        background-size: contain;
+        background-size: 75%;
         background-position: left;
+        background-repeat: no-repeat;
     }
 
     .description {
